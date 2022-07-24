@@ -1,9 +1,9 @@
 body{
     background-color: rgba(214, 210, 210, 0.788);
 }
+
 nav{
-    padding-top: 0.8em;
-    margin: 25px 20px;
+      margin: 25px 20px 0 20px;
     }
 
 .nav-list{
@@ -17,50 +17,49 @@ nav{
     list-style-type: none;
     display: inline-block;
     position: relative;
-    padding: 20px;
 }
 
 .link{
-    width: 100%;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 20px;   
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .sub-nav-list{
     position: absolute;
-    top: 60px;
-    left: 15px;
+    top: 60px;  
     display: block;
 }
 
 .sub-list-item{
-    width: 120px;
-    height: 20px;
-    /*display: block;*/
-    display:none;
+    display: none;
     list-style-type: none;
     background-color: rgb(226, 77, 12);
-    padding: 10px;
 }
 
 .list-item:hover > .sub-nav-list > .sub-list-item{
     display: block;
     }
 
-a{
-    width: 100%;
-    display: block;
-    margin: 0;
-    padding: 0;
+.link:hover {
+    background-color: rgb(177, 63, 63);
 }
 
-a:hover {
-    background-color: brown;
+.list-item .link {
+    padding: 20px 30px 20px 20px;
+}
+
+.list-item.sub-list-item .link{
+    width: 120px;
+    height: 20px;
+    padding: 20px;
 }
     
-.sub-nav-list.sub-sub-nav-list{
+.sub-list-item .sub-nav-list{
     top:0;
-    left: 140px;
+    left: 160px;
 }
 
