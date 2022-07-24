@@ -3,17 +3,17 @@ body{
 }
 nav{
     padding-top: 0.8em;
-    margin: 25px 15px;
+    margin: 25px 20px;
     }
 
 .nav-list{
     margin: 0;
     padding: 0;
     font-size: 0;
+    background-color: rgb(226, 77, 12);
 }
 
 .list-item{
-    background-color: rgb(226, 77, 12);
     list-style-type: none;
     display: inline-block;
     position: relative;
@@ -31,10 +31,11 @@ nav{
     position: absolute;
     top: 60px;
     left: 15px;
+    display: block;
 }
 
 .sub-list-item{
-    width: 130px;
+    width: 120px;
     height: 20px;
     /*display: block;*/
     display:none;
@@ -43,13 +44,23 @@ nav{
     padding: 10px;
 }
 
-.list-item:hover .sub-list-item{
+.list-item:hover > .sub-nav-list > .sub-list-item{
     display: block;
     }
 
-.sub-sub-nav-list{
-    position: absolute;
-    top: 80px;
-    left: 150px;
+a{
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    background-color: brown;
+}
+    
+.sub-nav-list.sub-sub-nav-list{
+    top:0;
+    left: 140px;
 }
 
